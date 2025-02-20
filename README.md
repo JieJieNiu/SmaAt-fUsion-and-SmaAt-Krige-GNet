@@ -42,8 +42,12 @@ The results will get saved in a json in the same folder as the models.
 Specify the model you want to train in the console by adding it as an argument to '--m'.
 For example:
 ```
-test_models.py --m "Smaat"
+test the SmaAt-Unet models, test_models.py --m "Smaat"
 ```
+test the SmaAt-fUsion, test_models.py --m "Bridge"
+
+test the SmaAt-Krige-GNet, test_models.py --m "Krige"
+
 To test the persistence model, set the argument '--p' to True.
 ```
 test_models.py --m "Smaat" --p True
@@ -52,14 +56,12 @@ test_models.py --m "Smaat" --p True
 Example code for creating similar plots as in the paper can be found in the notebooks folder.
 
 ### Precipitation dataset
-The 4 year dataset consists of precipitation maps in 5-minute intervals from 2016-2019 resulting in about 420,000 images.
-The 10 year dataset consists of precipitation maps in 5-minute intervals from 2014-2023 resulting in 1,000,000+ images
-
+The 4 year dataset consists of precipitation maps in 5-minute intervals from 2016-2019 resulting in about 420,000 images. 
 The dataset is based on radar precipitation maps from the [The Royal Netherlands Meteorological Institute (KNMI)](https://www.knmi.nl/over-het-knmi/about).
 The original images were cropped as can be seen in the example below:
 ![Precip cutout](Precipitation%20map%20Cutout.png)
 
-If you are interested in the dataset that we used please write an e-mail to: k.trebing@alumni.maastrichtuniversity.nl and s.mehrkanoon@uu.nl
+If you are interested in the dataset that we used please write an e-mail to: s.mehrkanoon@uu.nl
 
 The 50% dataset has 4GB in size. Use the [create_dataset.py](create_datasets.py) to create the dataset from the original dataset.
 
