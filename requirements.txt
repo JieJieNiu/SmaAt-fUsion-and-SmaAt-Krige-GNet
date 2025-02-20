@@ -1,0 +1,16 @@
+h5py==3.12.1
+joblib==1.4.2
+matplotlib==3.10.0
+numpy==2.2.1
+opencv_python==4.10.0.84
+pandas==1.5.3
+Pillow==11.1.0
+PyKrige==1.7.2
+pytorch_lightning==2.2.1
+scikit_learn==1.6.1
+scipy==1.15.1
+torch==2.2.2+cu121
+torch_geometric==2.6.1
+torchinfo==1.8.0
+torchvision==0.17.2+cu121
+tqdm==4.65.2
