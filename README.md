@@ -1,5 +1,5 @@
 # SmaAt-fUsion and SmaAt-Krige-GNet
-Code for the Paper "SmaAt-UNet: Precipitation Nowcasting using a Small Attention-UNet Architecture" [Arxiv-link](https://arxiv.org/abs/2007.04417), [Elsevier-link](https://www.sciencedirect.com/science/article/pii/S0167865521000556?via%3Dihub)
+Code for the Paper "Integrating Weather Station Data and Radar for Precipitation Nowcasting: SmaAt-fUsion and SmaAt-Krige-GNet" [Arxiv-link](), [Elsevier-link]()
 
 ![SmaAt-fUsion](SmaAt-fUsion.png)
 ![Kriging Overview](Kriging_Overview.png)
@@ -29,8 +29,10 @@ For the paper we used the [Lightning](https://github.com/Lightning-AI/lightning)
 In order to use PL we created the model [UNetDS_Attention](models/unet_precip_regression_lightning.py) whose parent inherits from the pl.LightningModule. This model is the same as the pure PyTorch SmaAt-UNet implementation with the added PL functions.
 
 ### Training
-To train SmaAt-UNet use [train_smaat.py](train_smaat.py).
-For training on the precipitation task we used the [train_models.py](train_models.py) file.
+For training on the precipitation task we used the [train_models.py](train_models.py) file. 
+To train SmaAt-fUsion please choose 'Node_SmaAt_bridge' in [train_models.py](train_models.py).
+To train SmaAt-Krige-GNet please choose 'Krige_GNet' in [train_models.py](train_models.py).
+To train SmaAt-Unet use [train_smaat.py](train_smaat.py).
 The training will place a checkpoint file for every model in the `default_save_path` `lightning/precip_regression`.
 After finishing training place the best models (probably the ones with the lowest validation loss) that you want to compare in another folder in `checkpoints/comparison`.
 
