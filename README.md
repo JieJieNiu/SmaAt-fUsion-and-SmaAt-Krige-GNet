@@ -30,10 +30,15 @@ In order to use PL we created the model [UNetDS_Attention](models/unet_precip_re
 
 ### Training
 For training on the precipitation task we used the [train_models.py](train_models.py) file. 
+
 To train SmaAt-fUsion please choose 'Node_SmaAt_bridge' in [train_models.py](train_models.py).
+
 To train SmaAt-Krige-GNet please choose 'Krige_GNet' in [train_models.py](train_models.py).
+
 To train SmaAt-Unet use [train_smaat.py](train_smaat.py).
+
 The training will place a checkpoint file for every model in the `default_save_path` `lightning/precip_regression`.
+
 After finishing training place the best models (probably the ones with the lowest validation loss) that you want to compare in another folder in `checkpoints/comparison`.
 
 ### Testing
