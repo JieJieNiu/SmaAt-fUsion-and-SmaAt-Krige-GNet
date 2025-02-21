@@ -70,7 +70,7 @@ Overview map of all the nodes that are included in the weather station dataset.
 
 ![Weather stations](stations_map.png)
 
-The 4 year dataset consists of precipitation maps in 5-minute intervals from 2016-2019 resulting in about 420,000 images. The precipitation dataset originally used by Trebing et al. 
+The 4 year radar-based precipitation dataset consists of precipitation maps in 5-minute intervals from 2016-2019 resulting in about 420,000 images. The precipitation dataset originally used by Trebing et al. 
 The dataset is based on radar precipitation maps.
 The original images were cropped as can be seen in the example below:
 ![Precip cutout](Precipitation%20map%20Cutout.png)
