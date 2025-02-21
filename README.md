@@ -59,18 +59,23 @@ test_models.py --m "Smaat" --p True
 ```
 
 ### Precipitation dataset
-The 4 year dataset consists of precipitation maps in 5-minute intervals from 2016-2019 resulting in about 420,000 images. 
+This study utilizes two complementary datasets: a weather station dataset and a radar-based precipitation dataset. Both datasets were obtained from the Royal Netherlands Meteorological Institute (KNMI) and are used together to improve precipitation nowcasting performance.
+
+The weather station dataset which provides multivariable atmospheric measurements from 22 weather stations across the Netherlands. 
+
+The 4 year dataset consists of precipitation maps in 5-minute intervals from 2016-2019 resulting in about 420,000 images. The precipitation dataset originally used by Trebing et al. 
 The dataset is based on radar precipitation maps from the [The Royal Netherlands Meteorological Institute (KNMI)](https://www.knmi.nl/over-het-knmi/about).
 The original images were cropped as can be seen in the example below:
 ![Precip cutout](Precipitation%20map%20Cutout.png)
 
 If you are interested in the dataset that we used please write an e-mail to: s.mehrkanoon@uu.nl
 
-The 50% dataset has 4GB in size. Use the [create_dataset.py](create_datasets.py) to create the dataset from the original dataset.
+Use the [create_dataset.py](create_datasets.py) to create the dataset from the original dataset.
 
 The dataset is already normalized using a [Min-Max normalization](https://en.wikipedia.org/wiki/Feature_scaling#Rescaling_(min-max_normalization)).
 In order to revert this you need to multiply the images by 47.83; this results in the images showing the mm/5min.
 
 For the SmaAt-fUsion model to work, the node dataset needs to be synced and merged with the precipitation dataset using the functions in dataset_utils.
+
 For the SmaAt-Krige-GNet model to work, the Kriging dataset needs to be generated from a synced and merged dataset using [create_kriging_datasets.py](create_kriging_datasets.py)
 
