@@ -1,5 +1,5 @@
 # SmaAt-fUsion and SmaAt-Krige-GNet
-Code for the Paper "Integrating Weather Station Data and Radar for Precipitation Nowcasting: SmaAt-fUsion and SmaAt-Krige-GNet" [Arxiv-link](), [Elsevier-link]()
+Code for the Paper "Integrating Weather Station Data and Radar for Precipitation Nowcasting: SmaAt-fUsion and SmaAt-Krige-GNet"
 
 ![SmaAt-fUsion](SmaAt-fUsion.png)
 ![Kriging Overview](Kriging_Overview.png)
@@ -45,15 +45,13 @@ For example:
 test the SmaAt-Unet models, test_models.py --m "Smaat"
 ```
 test the SmaAt-fUsion, test_models.py --m "Bridge"
-
+```
 test the SmaAt-Krige-GNet, test_models.py --m "Krige"
-
+```
 To test the persistence model, set the argument '--p' to True.
 ```
 test_models.py --m "Smaat" --p True
 ```
-### Plots
-Example code for creating similar plots as in the paper can be found in the notebooks folder.
 
 ### Precipitation dataset
 The 4 year dataset consists of precipitation maps in 5-minute intervals from 2016-2019 resulting in about 420,000 images. 
