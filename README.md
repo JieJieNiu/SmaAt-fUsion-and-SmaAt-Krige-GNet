@@ -49,11 +49,15 @@ For example:
 ```
 test the SmaAt-Unet models, test_models.py --m "Smaat"
 ```
+```
 test the SmaAt-fUsion, test_models.py --m "Bridge"
+```
 ```
 test the SmaAt-Krige-GNet, test_models.py --m "Krige"
 ```
+```
 To test the persistence model, set the argument '--p' to True.
+```
 ```
 test_models.py --m "Smaat" --p True
 ```
