@@ -65,8 +65,10 @@ test_models.py --m "Smaat" --p True
 ### Precipitation dataset
 This study utilizes two complementary datasets: a weather station dataset and a radar-based precipitation dataset. Both datasets were obtained from the [The Royal Netherlands Meteorological Institute (KNMI)](https://www.knmi.nl/over-het-knmi/about).
 
-The weather station dataset which provides multivariable atmospheric measurements from 22 weather stations across the Netherlands. Overview map of all the nodes that are included in the
-weather station dataset. ![Weather stations](stations_map.png)
+The weather station dataset which provides multivariable atmospheric measurements from 22 weather stations across the Netherlands. 
+Overview map of all the nodes that are included in the weather station dataset.
+
+![Weather stations](stations_map.png)
 
 The 4 year dataset consists of precipitation maps in 5-minute intervals from 2016-2019 resulting in about 420,000 images. The precipitation dataset originally used by Trebing et al. 
 The dataset is based on radar precipitation maps.
