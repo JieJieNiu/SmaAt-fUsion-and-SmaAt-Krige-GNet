@@ -1,5 +1,5 @@
 # SmaAt-fUsion and SmaAt-Krige-GNet
-Code for the Paper "Integrating Weather Station Data and Radar for Precipitation Nowcasting: SmaAt-fUsion and SmaAt-Krige-GNet"
+Code for the Paper "Integrating Weather Station Data and Radar for Precipitation Nowcasting: SmaAt-fUsion and SmaAt-Krige-GNet" [Arxiv-link](https://arxiv.org/abs/2502.16116)
 
 ![SmaAt-fUsion](SmaAt-fUsion.png)
 ![Kriging Overview](Kriging_Overview.png)
@@ -85,4 +85,17 @@ In order to revert this you need to multiply the images by 47.83; this results i
 For the SmaAt-fUsion model to work, the node dataset needs to be synced and merged with the precipitation dataset using the functions in dataset_utils.
 
 For the SmaAt-Krige-GNet model to work, the Kriging dataset needs to be generated from a synced and merged dataset using [create_kriging_datasets.py](create_kriging_datasets.py)
+
+Citation
+```
+@misc{cornelissen2025integratingweatherstationdata,
+      title={Integrating Weather Station Data and Radar for Precipitation Nowcasting: SmaAt-fUsion and SmaAt-Krige-GNet}, 
+      author={Aleksej Cornelissen and Jie Shi and Siamak Mehrkanoon},
+      year={2025},
+      eprint={2502.16116},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2502.16116}, 
+}
+```
 
