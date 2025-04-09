@@ -77,7 +77,7 @@ The original images were cropped as can be seen in the example below:
 
 If you are interested in the dataset that we used please write an e-mail to: s.mehrkanoon@uu.nl
 
-Use the [create_dataset.py](create_datasets.py) to create the dataset from the original dataset
+Use the [create_dataset.py](create_datasets.py) to create the dataset from the original dataset.
 
 The dataset is already normalized using a [Min-Max normalization](https://en.wikipedia.org/wiki/Feature_scaling#Rescaling_(min-max_normalization)).
 In order to revert this you need to multiply the images by 47.83; this results in the images showing the mm/5min.
